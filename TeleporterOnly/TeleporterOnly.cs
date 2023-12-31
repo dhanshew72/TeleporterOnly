@@ -30,8 +30,7 @@ namespace TeleporterOnly
 
             logger.LogInfo($"The {modGUID} mod has started");
             harmony.PatchAll(typeof(TeleporterOnly));
-            harmony.PatchAll(typeof(RoundManagerPatch));
-            // harmony.PatchAll(typeof(PlayerControllerBPatch));
+            harmony.PatchAll(typeof(GameNetworkManagerPatch));
         }
     }
 }
